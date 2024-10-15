@@ -10,7 +10,7 @@ PROJECT_DIRPATH = Path(__file__).resolve().parents[1]
 MODELS_DIRPATH = PROJECT_DIRPATH / "models"
 
 # Load the trained mode
-model = tf.keras.models.load_model(MODELS_DIRPATH / "model.keras")
+model = tf.keras.models.load_model(MODELS_DIRPATH / "best_model.keras")
 
 # Load encoders and scalers
 with open(MODELS_DIRPATH / "onehot_encoder_geo.pkl", "rb") as file:
